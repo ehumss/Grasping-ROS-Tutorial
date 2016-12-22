@@ -5,17 +5,17 @@ This tutorial focuses on navigating around ROS, MoveIt (the motion planner) and 
 ## Obtaining Packages
 You will need an installation of ROS. This tutorial is tested on jade, but it should also work for previous distros like indigo. Most of the CLIC machines at Columbia have ROS installed. Create a folder called *GraspDemo*, and a subdirectory called *src*. You will need the following packages, which can be obtained using the following links:
 
-1. **pr2_simulator**
+* **pr2_simulator**
 ```bash
 $ git clone https://github.com/PR2/pr2_simulator.git 
 ```
-2. **GraspIt, graspit_commander, graspit_interface**
+* **GraspIt, graspit_commander, graspit_interface**
 ```bash
 $ git clone https://github.com/graspit-simulator/graspit-ros --recursive
 $ git clone git@github.com:CURG/graspit_commander.git
 $ git clone git@github.com:CURG/graspit_interface.git
 ```
-3. **MoveIt and MoveIt_commander** (most CLIC machines already have MoveIt installed)
+* **MoveIt and MoveIt_commander** (most CLIC machines already have MoveIt installed)
 ```bash
 $ sudo apt-get install ros-indigo-moveit-ros
 $ sudo apt-get install ros-indigo-pr2-moveit-config
