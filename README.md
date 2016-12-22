@@ -38,9 +38,13 @@ $ catkin_make
 ```
 This tutorial focuses on grasping and execution, but does not cover vision. So there needs to be a way to transfer the model from Gazebo to the GraspIt planning scene. For now, you can add the model to be grasped to the graspit planning scene. Do the following:
 1. place *cup.xml* in *src/graspit-ros/graspit/graspit_source/models/objects*
+
 2. place *cup.ply* in *src/graspit-ros/graspit/graspit_source/models/objects*
+
 3. place *pr2_mug.launch* in *src/graspit-ros/graspit/graspit_source/worlds*
+
 4. place *plane.xml* in *src/graspit-ros/graspit/graspit_source/models/obstacles*
+
 5. place *plane.ply* in *src/graspit-ros/graspit/graspit_source/models/obstacles*
 
 #### ROS-side stuff
