@@ -87,7 +87,6 @@ You can keep opening new terminals and send commands to ROS from any terminal. J
 * ```$ history | grep <partial name of command>``` to help retrace your steps
 * ```$ ipython```  -> start an IPython session from the command line
 * ```import IPython```
-
 ```IPython.embed()``` -> Within a Python script, stops execution and helps you check variables, test subsequent lines of code without crashing the program. Very useful for debugging python code. 
 * ```env | grep -i ros``` -> Check the ROS package path 
 
