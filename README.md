@@ -1,5 +1,5 @@
 # Tutorial on simple grasping pipeline
-![](pr2_shot.png =100x20)
+![](pr2_shot.png?width="100")
 This tutorial focuses on navigating around ROS, MoveIt (the motion planner) and GraspIt (the grasp generator) to generate high-quality grasps from the PR2, and visualize them in Gazebo. 
 
 ## Obtaining Packages
