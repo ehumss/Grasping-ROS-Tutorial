@@ -1,4 +1,3 @@
-
 import utils_grasp as gu
 import rospy
 import graspit_commander 
@@ -8,7 +7,6 @@ import pr2_controllers_msgs.msg
 
 
 if __name__ == "__main__":
-	#print "I'm in main" + str(__name__)
 	rospy.init_node("moveit_demo")
 	robot = moveit_commander.RobotCommander()
 	gc = graspit_commander.GraspitCommander()
@@ -39,14 +37,7 @@ if __name__ == "__main__":
 		gu.down(robot)
 		gu.open_right_grip(pub)
 		gu.up(robot)
-		#gu.home_right_arm(robot)
-		#double check if mug is statically linked to gripper
 
-		#Have it pla
 
 	import IPython
-	# print "gu.show_grasp(grasps,gc,id=0)"
-	# print "gu.execute_traj(grasps,id,robot)"
-	# print "gu.grab(pub)"
 	IPython.embed()
-	#gu.show_grasp(grasps,gc,id=0)

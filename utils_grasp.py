@@ -1,5 +1,3 @@
-# coding: utf-8
-
 import os
 import graspit_commander 
 import rospy
