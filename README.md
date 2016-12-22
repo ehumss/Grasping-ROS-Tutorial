@@ -55,7 +55,7 @@ This tutorial includes a python library of functions to execute grasps on an obj
 
 *utils_grasp.py* includes functions to solve many common problems such as moving the arms, closing the gripper, and moving the head & torso. You would need to modify the ```spawn_mug()``` function, in particular the path to the model to be spawned. 
 
-The Python interface is simple but powerful. Currently, The user cycles through the 20 best grasps from GraspIt, and selects which one to execute by visual evaluation. A function to automatically assess reachability is also included. Successful grasps return the object back to the original location, so you can try another grasp. If the cup moves because of a bad grasp, you can grab the cup in gazebo, throw it out of the way, and spawn a new one. Note that this step is necessary because this tutorial does not include vision so the initial coordinates of the cup are hardcoded. Here is the command to spawn a new model, which you can run by opening a new terminal:
+The Python interface is simple but powerful. Currently, the user cycles through the 20 best grasps from GraspIt, and selects which one to execute by visual evaluation. A function to automatically assess reachability is also included. Successful grasps return the object back to the original location, so you can try another grasp. If the cup moves because of a bad grasp, you can grab the cup in gazebo, throw it out of the way, and spawn a new one. Note that this step is necessary because this tutorial does not include vision so the initial coordinates of the cup are hardcoded. Here is the command to spawn a new model, which you can run by opening a new terminal:
 ```bash
 $ rosrun gazebo_ros spawn_model -file <path_to_cup>/cup.urdf -urdf -model New_Model_Name -x .6 -y -.1 -z 0.55 -Y -1.57
 ```
@@ -87,6 +87,7 @@ You can keep opening new terminals and send commands to ROS from any terminal. J
 * ```$ history | grep <partial name of command>``` to help retrace your steps
 * ```$ ipython```  -> start an IPython session from the command line
 * ```import IPython```
+
 ```IPython.embed()``` -> Within a Python script, stops execution and helps you check variables, test subsequent lines of code without crashing the program. Very useful for debugging python code. 
 * ```env | grep -i ros``` -> Check the ROS package path 
 
